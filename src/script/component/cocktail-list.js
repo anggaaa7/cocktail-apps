@@ -1,6 +1,6 @@
 import './cocktail-item';
 
-class ClubList extends HTMLElement {
+class CocktailList extends HTMLElement {
     constructor() {
         super();
         this.shadowDOM = this.attachShadow({mode: "open"});
@@ -11,7 +11,7 @@ class ClubList extends HTMLElement {
         this.render();
     }
 
-    renderError(message) {
+    render() {
         this.shadowDOM.innerHTML = '';
 
         this._cocktails.forEach(cocktail => {
